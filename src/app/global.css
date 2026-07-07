@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --main-font:
+    "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  --wrap-border: #323232;
+  --wrap-bg: #1d1d1d;
+  --wrap-filler: #242424;
+
+  --page-bg: #161616;
+  --svg-filler: #646464;
+
+  --text-main: #f0f0f0;
+  --text-sub: #969696;
+
+  --link-color: #45a7ef;
+  --focus-color: #f92841;
+  --onfocus-color: #f0f0f0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.fs-xl {
+  font-size: 28px;
+}
+.fs-l {
+  font-size: 24px;
+}
+.fs-m {
+  font-size: 18px;
+}
+.fs-s {
+  font-size: 16px;
+}
+.fs-xs {
+  font-size: 14px;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-300 {
+  font-weight: 300;
+}
+div,
+span,
+p,
+button,
+a,
+input {
+  font-family: var(--main-font);
+  color: var(--text-main);
+}
+input::placeholder {
+  font-size: var(--fs-m);
+  color: var(--text-sub);
+}
+.default-wrap {
+  background: var(--wrap-bg);
+  border: solid 1px var(--wrap-border);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
