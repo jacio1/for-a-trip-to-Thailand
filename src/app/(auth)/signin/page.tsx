@@ -25,7 +25,7 @@ export default function SignInPage() {
   return (
     <div>
       <h1>{t("Language")}</h1>
-      continue
+      <p>send me 40 000 dollars for my trip</p>
     </div>
   );
 }
