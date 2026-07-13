@@ -35,8 +35,12 @@ function SelectFull({ label, size, options, activeIndex = 0, onChange }: SelectF
       {label ? <p className={`${LabelFontSize} ${LabelFontWeight}`}>{t(label)}</p> : null}
       <div className="w-full px-3 py-2 rounded-3xl flex flex-col justify-between relative default-wrap">
         {options.map((item, index) => (
-          <button key={index} onClick={() => handleClick(item, index)} className={`w-full relative z-3 p-2 flex justify-between`}>
-            <p className={`w-fit transition-all duration-200 ${ElementFontSize} ${ElementFontWeight}`} style={{ color: activeIndexState === index ? "var(--text-main)" : "var(--text-sub)", textAlign: 'left' }}>{t(item.title)}</p>
+          <button key={index} onClick={() => handleClick(item, index)}
+            className={`w-full relative z-3 p-2 flex justify-between`}
+            style={{ borderBottom: index < options.length - 1 ? "1px solid var(--wrap-border)" : "none" }}>
+            <p className={`w-fit transition-all duration-200 ${ElementFontSize} ${ElementFontWeight}`} style={{ color: activeIndexState === index ? "var(--text-main)" : "var(--text-sub)", textAlign: "left" }}>
+              {t(item.title)}
+            </p>
             <Check className="transition-all duration-200" color={activeIndexState === index ? "var(--focus-color)" : "var(--wrap-bg)"} />
           </button>
         ))}
