@@ -58,10 +58,6 @@ button {
   font-weight: 300;
 }
 div,
-span,
-p,
-button,
-a,
 input {
   font-family: var(--main-font);
   color: var(--text-main);
