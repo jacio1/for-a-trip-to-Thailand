@@ -12,7 +12,6 @@ const resources = {
       russian: "Russian",
       espaniol: "Espaniol",
       china: "China",
-      Registration: "Registration",
     },
   },
   ru: {
@@ -25,7 +24,6 @@ const resources = {
       russian: "Русский",
       espaniol: "Испанский",
       china: "Китайский",
-      Registration: "Регистрация",
     },
   },
 };

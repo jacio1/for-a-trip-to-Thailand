@@ -2,6 +2,7 @@
 
 import "./global.css";
 import { I18nProvider } from "./providers/i18n-provider";
+
 import NavigationBar from "../components/NavigationBar";
 import { usePathname } from "next/navigation";
 
