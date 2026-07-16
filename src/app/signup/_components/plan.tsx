@@ -67,7 +67,7 @@ export default function Plan({ setNewTrial }: PlanProps) {
   const isFreeSelected = trial === "free";
 
   return (
-    <div className="w-full h-full p-3 flex flex-col gap-3 justify-center">
+    <div className="min-w-full h-full p-3 flex flex-col gap-3 justify-center">
       <Switcher size="l" options={period} activeIndex={0} onChange={changePeriod} />
       {/* Paid trial */}
       <div className={`p-4 rounded-4xl flex flex-col default-wrap cursor-pointer transition-all duration-200 ${isPaidSelected ? "border-[--focus-color]" : ""}`} onClick={() => handleTrial("paid")}>

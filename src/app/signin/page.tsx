@@ -1,6 +1,8 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+
+import Navigation from "./_components/navigation";
 import InputRow from "@/src/components/ui/input/InputRow";
 
 interface AccountProps {
