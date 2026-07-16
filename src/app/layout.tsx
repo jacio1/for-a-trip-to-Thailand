@@ -3,16 +3,9 @@
 import "./global.css";
 import { I18nProvider } from "./providers/i18n-provider";
 
-<<<<<<< HEAD
 
-export const metadata: Metadata = {
-  title: "Jacio1 hardcoded",
-  description: "Redmorrayne is god tier dev",
-};
-=======
 import NavigationBar from "../components/NavigationBar";
 import { usePathname } from "next/navigation";
->>>>>>> ed5f3b9393eb4c999d518737f28a0704c49e4d5f
 
 export default function RootLayout({
   children,
