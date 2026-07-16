@@ -11,7 +11,7 @@ export default function Terms({ goBack }: TermsProps) {
   const { t } = useTranslation();
 
   return (
-    <div className="min-w-full h-full p-3 flex gap-3 flex-col relative overflow-y-auto">
+    <div className="min-w-full h-full p-3 flex gap-3 flex-col relative z-3 overflow-y-scroll" style={{background: 'var(--page-bg)'}}>
       <div className="absolute top-3 left-3">
         <BackButton onClick={goBack} />
       </div>

@@ -37,7 +37,7 @@ export default function Settings({ goBack, setNewTheme, setNewLanguage }: Settin
   };
 
   return (
-    <div className="min-w-full h-full p-3 flex gap-3 flex-col justify-center relative">
+    <div className="min-w-full h-full p-3 flex gap-3 flex-col justify-center relative z-3" style={{background: 'var(--page-bg)'}}>
       <div className="absolute top-3 left-3">
         <BackButton onClick={goBack} />
       </div>
